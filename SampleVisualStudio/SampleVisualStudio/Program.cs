@@ -7,6 +7,9 @@ namespace SampleVisualStudio
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            SampleClass.StaticMethod();
+            SampleClass isc = new SampleClass();
+            isc.SampleMethod(10);
         }
     }
 }

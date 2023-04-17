@@ -1,0 +1,20 @@
+pipeline{
+  agent any
+    stages {
+        stage('git clone') {
+            steps {
+                git 'https://github.com/ersanjaysah/SampleProject.git'
+                }
+              }
+         stage('Test') {
+              steps {
+                  echo "i am going to test my repo"
+                  }
+               }
+         stage('Build'){
+              steps {
+                  echo "test is success and build completed"
+                  }
+                }
+              }
+           }
